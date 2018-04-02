@@ -1,0 +1,2 @@
+# newspress
+WordPress Theme
