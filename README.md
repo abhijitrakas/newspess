@@ -1,0 +1,2 @@
+# newspess
+WordPress Theme
