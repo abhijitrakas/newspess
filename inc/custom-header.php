@@ -17,14 +17,18 @@
  * @uses newspress_header_style()
  */
 function newspress_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'newspress_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'newspress_header_style',
-	) ) );
+	add_theme_support(
+		'custom-header', apply_filters(
+			'newspress_custom_header_args', array(
+				'default-image'      => '',
+				'default-text-color' => '000000',
+				'width'              => 1000,
+				'height'             => 250,
+				'flex-height'        => true,
+				'wp-head-callback'   => 'newspress_header_style',
+			)
+		)
+	);
 }
 add_action( 'after_setup_theme', 'newspress_custom_header_setup' );
 
